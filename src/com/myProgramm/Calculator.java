@@ -5,8 +5,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-
-
 public class Calculator {
 
     static JTextField num_field;
@@ -44,8 +42,6 @@ public class Calculator {
         constraints.ipadx = 100;
 
         container.add(num_field, constraints);
-
-        constraints.gridx = 1;
 
         plusButton = new JButton(String.valueOf(Keys.PLUS));
         minusButton = new JButton(String.valueOf(Keys.MINUS));
@@ -85,7 +81,6 @@ public class Calculator {
         equalButton.addActionListener(new ButtonEventManager());
         clearButton.addActionListener(new ButtonEventManager());
     }
-
 
     static class ButtonEventManager implements ActionListener{
 
